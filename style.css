@@ -461,3 +461,95 @@ animation: drop-letters 5s 0.7s infinite;
         
     }
     /* End of Cont-act */
+    /* footer */
+    .footer{
+        background-color: var(--grey-color);
+        padding: 4rem 0 2rem 0;
+    }
+    .footer-list{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-link{
+        font-size: 2rem;
+        color: var(--white-color);
+        margin: 0 2rem;
+        background-color: var(--grey-color);
+        padding: 0.3rem 3rem;
+        letter-spacing: 0.3rem;
+        /* css animation */
+        transition: all 0.2s;
+    }
+    .footer-link:hover{
+        transform: rotate(-10deg);
+        box-shadow: 0 2rem 3rem #000;
+    }
+    .footer-paragraph{
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+        letter-spacing: 0.2rem;
+        margin-top: 5rem;
+    }
+    /* End of Footer */
+    /* navbar */
+    .navbar-icon{
+        width: 5.5rem;
+        height: 5.5rem;
+        background-color: var(--white-color);
+        border-radius: 50%;
+        cursor: pointer;
+        flex-direction: column;
+    }
+    .navbar-icon .line{
+        height: .2rem;
+        width:3.5rem;
+        background-color: var(--light-grey-color);
+    }
+    .open-navbar-icon .line{
+        margin: 0.3rem 0;
+    }
+    .navbar-wrapper{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255,255,255,0.7);
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        z-index:300;
+        padding: 3.5rem 5.5rem 3.5rem 3.5rem;
+    }
+    .navbar{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(images/navbar-bg.jpg) center no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .open-navbar-icon{
+        position: fixed;
+        top: 6.5rem;
+        left: 6.5rem;
+        z-index: 200;
+    }
+    .close-navbar-icon{
+        position:absolute;
+        top: 2.5rem;
+        right: 3rem;
+    }
+    .close-navbar-icon .line{
+        position: absolute;
+    }
+    .line-1{
+        transform: rotate(40deg);
+    }
+    .line-2{
+        transform: rotate(-40deg);
+    }
+    .nav-link{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--white-color);
+        text-transform: uppercase;
+    }
+    /* end navbar */
